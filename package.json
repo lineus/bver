@@ -1,12 +1,29 @@
 {
   "name": "bver",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "bump a Major/minor/patch version in a package.json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*spec.js"
   },
-  "keywords": ["bump", "version", "semver"],
+  "keywords": [
+    "bump",
+    "version",
+    "semver"
+  ],
   "author": "Kev <lineus@gmail.com>",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "semver": "^7.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.1.0",
+    "eslint-plugin-jsdoc": "^25.4.2",
+    "jsdoc": "^3.6.4",
+    "mocha": "^7.2.0",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2"
+  }
 }
