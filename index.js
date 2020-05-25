@@ -1,4 +1,3 @@
-
 'use strict';
 
 const { readFile, writeFile } = require('fs').promises;
@@ -18,8 +17,7 @@ for (let key of Object.keys(options)) {
 
 program.parse(process.argv);
 
-
-run().catch(console.error);
+module.exports = run;
 
 async function run() {
   const { file, dryrun } = program;

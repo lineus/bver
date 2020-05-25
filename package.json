@@ -1,6 +1,6 @@
 {
   "name": "bver",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "bump a Major/minor/patch version in a package.json",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,6 @@
     "mocha": "^7.2.0",
     "nyc": "^15.0.1",
     "sinon": "^9.0.2"
-  }
+  },
+  "bin": "./cli.js"
 }
