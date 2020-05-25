@@ -8,7 +8,7 @@ const getMethod = require('./lib/getMethod');
 const getNewVersion = require('./lib/getNewVersion');
 
 program.version(version)
-  .description('bump the Major/minor/patch of a package.json');
+  .description('bump the version of a package.json');
 
 for (let key of Object.keys(options)) {
   let opt = options[key];
@@ -17,7 +17,9 @@ for (let key of Object.keys(options)) {
 
 program.parse(process.argv);
 
-module.exports = run;
+module.exports = {
+  run
+};
 
 async function run() {
   const { file, dryrun } = program;
